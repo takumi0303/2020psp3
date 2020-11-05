@@ -1,5 +1,5 @@
 # 課題2 レポート
-学籍番号　氏名
+学籍番号　35319012 氏名　大木拓海
 
 
 ## 課題
@@ -77,12 +77,43 @@ CHALLENGE2を有効にしてください。
     - City* pCity: IDが合致した市町村のデータを入れる
 
 ## ソースコードの説明
-
+78 Nodeの先頭であるpNodeを確保する
+79 pNodeのを分けたうちのdataにnewCityのデータを代入する
+81 topにpNodeを代入し、returnさせる
+108 pNodeにpListを代入する
+110 IDとpNodeが一致するまで比較し、その工程の回数を記録する
 
 
 ## 出力結果
 
 ```
+42411, NagasakiKen, ShinKamigoto, 19718, 9197, 10521
+42391, NagasakiKen, Sasa, 13626, 6426, 7200
+42383, NagasakiKen, Ojika, 2560, 1172, 1388
+42323, NagasakiKen, Hasami, 14891, 7079, 7812
+42322, NagasakiKen, Kawatana, 14067, 6656, 7411
+42321, NagasakiKen, HigashiSonogi, 8298, 3886, 4412
+42308, NagasakiKen, Togitsu, 29804, 14326, 15478
+42307, NagasakiKen, Nagayo, 42548, 20090, 22458
+42214, NagasakiKen, MinamiShimabara, 46535, 21574, 24961
+42213, NagasakiKen, Unzen, 44115, 20847, 23268
+42212, NagasakiKen, Saikai, 28691, 14032, 14659
+42211, NagasakiKen, Goto, 37327, 17339, 19988
+42210, NagasakiKen, Iki, 27103, 12860, 14243
+42209, NagasakiKen, Tsushima, 31457, 15361, 16096
+42208, NagasakiKen, Matsuura, 23309, 11164, 12145
+42207, NagasakiKen, Hirado, 31920, 14874, 17046
+42205, NagasakiKen, Omura, 92757, 43938, 48819
+42204, NagasakiKen, Isahaya, 138078, 65029, 73049
+42203, NagasakiKen, Shimabara, 45436, 20999, 24437
+42202, NagasakiKen, Sasebo, 255439, 120198, 135241
+42201, NagasakiKen, Nagasaki, 429508, 198716, 230792
+print list. items = 21
+===== Print End =====
+City ID?42209
+the city was found at 13
+42209, NagasakiKen, Tsushima, 31457, 15361, 16096
+free list. items = 21
 
 ```
 
