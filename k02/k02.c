@@ -108,14 +108,14 @@ int SearchCityByID(Node* pList, int ID, City* pCity)
     int i=0;
     Node *pNode = pList;
 
-    while (pList->pNext != NULL)
+    while (pNode->pNext != NULL)
     {
         if(pNode->city.id == ID)
         { 
             *pCity= pNode->city;
        
             return i;
-        }
+        }  
         pNode = pNode->pNext;
         i++;
     }
