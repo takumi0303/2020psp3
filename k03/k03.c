@@ -17,14 +17,20 @@ char* ForceSearch(char text[], char key[])
     key_len=strlen(key);
     text_len=strlen(text);
     start=0;
-    for(start=0;start<text_len;start++){
-        for(i=0;i<key_len;i++){
-          if(text[start+i]==key[pos]){
+    for(start=0;start<text_len;start++)
+{
+        for(i=0;i<key_len;i++)
+    {
+          if(text[start+i]==key[pos])
+        {
               pos++;
-           if(key_len==pos){
+           if(key_len==pos)
+           {
                return &text[start];  
-          }
-        }else{
+           }
+
+        }else
+        {
             break;
         }
     }
@@ -68,7 +74,7 @@ for(z=0;z<256;z++)
 }
 for(z=key_len;z>0;z--)
 {
-    table[key[z-1]]=i;
+    table[key[z+1]]=i;
     i++;
 }
 index=key_len-1;
@@ -77,28 +83,30 @@ while(index<=text_len)
     for(pos=key_len-1;pos>=0;pos--)
     {
         if(text[index]==key[pos])
-    {
+       {
         if(pos==0&&text[index]==key[pos])
-        {
+          {
             return &text[index];
-        }
-    }
+          }
+       }
     else
     {
       break;
     }
     index--;
-}
+    }
 if(index+table[text[index]]<t)
-{
+    {
     index=index+1;
-}
-else{
+    }
+else
+    {
     index=index+table[text[index]];
-}
+    } 
 t=index;
 }
 return NULL;
+
 }
 int main(void)
 {
