@@ -72,9 +72,9 @@ for(z=0;z<256;z++)
 {
     table[z]=key_len;
 }
-for(z=key_len;z>0;z--)
+for(z=0;z<256;z++)
 {
-    table[key[z+1]]=i;
+    table[key[z-1]]=i;
     i++;
 }
 index=key_len-1;
