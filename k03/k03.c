@@ -45,7 +45,7 @@ char* BMSearch(char text[], char key[])
     int text_len=0;
     int key_len;
     int pos,i,t,z=0;
-    i=4;
+    i=0;
     t=0;
  while(1)
  {
@@ -72,9 +72,10 @@ for(z=0;z<256;z++)
 {
     table[z]=key_len;
 }
+ i=key_len-1;
 for(z=0;z<key_len;z++)
 {
-    table[key[z-1]]=i;
+    table[key[z]]=i;
     i--;
 }
 index=key_len-1;
