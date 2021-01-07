@@ -105,9 +105,10 @@ void BubbleSort(City arrayCity[], int size)
 
 void QuickSort(City arrayCity[], int left, int right)
 {
-    int j,k;
+    int j,k,v;
     City tmp,Pivot;
-    if(1 < right-left)
+    v= right -left;
+    if(1 <= v)
   {
         j=left;
         k=right;
@@ -124,7 +125,7 @@ void QuickSort(City arrayCity[], int left, int right)
             }
             for(k=right;k>left;k--)
             {
-              if(Pivot.seafood>arrayCity[k].seafood)
+              if(Pivot.seafood>=arrayCity[k].seafood)
               {
                   break;
               }
