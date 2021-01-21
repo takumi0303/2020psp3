@@ -1,5 +1,5 @@
 # 課題5 レポート
-学生番号　氏名
+学生番号　35319012 氏名　大木拓海
 
 
 ## 課題
@@ -97,12 +97,23 @@ int AdjacencyMatrix[MAX_STATIONS][MAX_STATIONS] = {
 - 幅優先探索のルート表示(10点)
 
 ## ソースコードの説明
+１、visitedを0にし、出発点をpushし続ける。行ったことがないとき、そこから行ける場所をstack入れる。行ったことが無い場合、行ったことにする。
 
+２、queueを初期化し、出発点をEnqueueする。queueから無くなるまで取り出し続ける。行ったことがない場合、行ったことにする。その後行ける場所を確認。
 
 
 ## 出力結果
 
 ```
+ visited=0
+ visited=1
+ visited=2
+ visited=3
+ visited=4
+ visited=5
+ visited=6
+ visited=7
+ visited=0 visited=1 visited=2 visited=3 visited=4 visited=5 visited=6 visited=7Time Required: 8
 
 ```
 
