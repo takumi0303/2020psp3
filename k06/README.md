@@ -67,12 +67,16 @@ typedef struct tagMenu{
 
 ## ソースコードの説明
 
-
+商品が入らない場合、１つ上の状態を引き継ぐ。
+商品を入れ替えた時の価値と入れ替えない場合の価値を比較し、最適な法を選択する。
 
 ## 出力結果
 
 ```
-
+PS C:\Users\bb35319012\Desktop\2020psp3> cd k06
+PS C:\Users\bb35319012\Desktop\2020psp3\k06> gcc -o k06 k06.c
+PS C:\Users\bb35319012\Desktop\2020psp3\k06> ./k06
+MAX_calorie is 1796
 ```
 
 ## 修正履歴
